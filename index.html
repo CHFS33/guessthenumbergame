@@ -7,18 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1 class="game-name">Can You Guess the number?</h1>
-    </header>
     <div>
-      <h2 class="computer-number">Computer's Guess</h2>
+      <h1 class="game-name">Can You Guess the number?</h1>
+    </div>
+    <div>
+      <h2 class="computer-number">Secret Number</h2>
       <img
         class="question-image"
         src="/images/doodle-question-marks.png"
         alt="??"
       />
     </div>
-    <form>
+    <div>
+    <div class="stat-board">
+      <span id="round">Round:</span>
+      <span id="current-score">Current Score:</span>
+      <span id="total-score">Total Score:</span>
+    </div>
+    <form class="user-section">
       <input
         type="number"
         placeholder="Guess a Number?"
@@ -27,5 +33,6 @@
       />
       <button class="user-input">Submit</button>
     </form>
+    
   </body>
 </html>
