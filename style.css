@@ -1,0 +1,25 @@
+body {
+  background-image: url("/images/pageBackground.jpg");
+  background-origin: border-box;
+}
+
+.gameName {
+  text-align: center;
+  color: rgba(148, 24, 148, 0.85);
+  font-size: 60px;
+  font-style: oblique;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+  text-shadow: 3px 3px 3px rgb(95, 98, 196);
+}
+
+.computerNumber {
+  text-align: center;
+}
+.questionImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+}
