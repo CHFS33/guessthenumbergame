@@ -1,9 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("/images/pageBackground.jpg");
   background-origin: border-box;
 }
 
-.gameName {
+.game-name {
   text-align: center;
   color: rgba(148, 24, 148, 0.85);
   font-size: 60px;
@@ -13,10 +19,10 @@ body {
   text-shadow: 3px 3px 3px rgb(95, 98, 196);
 }
 
-.computerNumber {
+.computer-number {
   text-align: center;
 }
-.questionImage {
+.question-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
