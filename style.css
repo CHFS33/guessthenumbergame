@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-image: url("/images/pageBackground.jpg");
+  background-image: url("images/pageBackground.jpg");
   background-origin: border-box;
 }
 
@@ -50,7 +50,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 #mystery-symbol {
-  background-image: url(/images/mysterNumber2.jpg);
+  background-image: url(images/mysterNumber2.jpg);
   background-size: 150% auto;
   -webkit-background-clip: text;
   color: transparent;
