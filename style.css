@@ -165,8 +165,11 @@ input::placeholder {
   #mystery-symbol {
     font-size: 4rem;
   }
-}
-#message-text {
-  font-size: 2rem;
-  color: red;
+  input::placeholder {
+    color: rgb(165, 111, 215);
+  }
+  #message-text {
+    font-size: 2rem;
+    color: red;
+  }
 }
