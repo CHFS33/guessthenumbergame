@@ -82,9 +82,11 @@ body {
 
   /* margin-top: 50px; */
 }
-#round,
-#current-score,
+#round-display,
+#score-display,
 #total-score {
+  display: grid;
+  justify-content: left;
   padding: 20px;
 }
 
