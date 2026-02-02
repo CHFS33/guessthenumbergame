@@ -6,50 +6,103 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
   background-image: url("/images/pageBackground.jpg");
   background-origin: border-box;
 }
 
 .game-name {
+  display: flex;
   text-align: center;
   color: rgba(148, 43, 226);
   font-size: 60px;
   font-style: oblique;
+  height: 100px;
+  width: auto;
 
   font-weight: 800;
   text-shadow: 3px 3px 3px rgb(133, 136, 241);
 }
 
-.computer-number {
-  text-align: center;
-}
-.question-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 200px;
+#secret-number {
+  display: flex;
   width: 200px;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+}
+#hidden-answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  text-align: center;
+  font-weight: bolder;
+
+  height: 200px;
+  width: 600px;
+  color: white;
+  border-radius: 15px;
+  border: 8px ridge #ffffff2d;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#mystery-symbol {
+  background-image: url(/images/mysterNumber2.jpg);
+  background-size: 150% auto;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: flowStars 10s linear infinite;
+  /* animation: spinSymbol 3s infinite linear; */
+}
+@keyframes flowStars {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gameplay {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 981px;
 }
 
 .stat-board {
   display: grid;
-  justify-content: center;
+  justify-content: left;
+  width: 281px;
   font-size: 20px;
   font-weight: bold;
   color: blueviolet;
-  margin-top: 50px;
-  width:;
+
+  /* margin-top: 50px; */
 }
 #round,
 #current-score,
 #total-score {
   padding: 20px;
 }
-input {
-  display: grid;
+
+.user-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 700px;
 }
 
-.user-input {
-  margin-bottom:;
-  margin-left: 50px;
+#user-guess {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+
+#user-answer {
+  width: 100px;
+  height: 50px;
 }
