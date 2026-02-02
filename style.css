@@ -116,13 +116,13 @@ body {
   margin-left: 15px;
   border-radius: 8px;
   background-color: transparent;
-  color: white;
+  color: rgb(165, 111, 215);
   font-weight: bold;
   font-size: 20px;
   border: none;
 }
 input::placeholder {
-  color: white;
+  color: rgb(165, 111, 215);
 }
 
 #round-display {
