@@ -109,6 +109,7 @@ body {
 
 @media (max-width: 768px) {
   .gameplay {
+    display: flex;
     flex-direction: column;
     width: 100%;
     gap: 20px;
@@ -123,8 +124,8 @@ body {
     font-size: 2rem;
   }
   #hidden-answer {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
   }
   #mystery-symbol {
     font-size: 4rem;
