@@ -166,3 +166,7 @@ input::placeholder {
     font-size: 4rem;
   }
 }
+#message-text {
+  font-size: 2rem;
+  color: red;
+}
