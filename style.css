@@ -18,10 +18,11 @@ body {
   display: flex;
   text-align: center;
   color: rgba(148, 43, 226);
-  font-size: 60px;
+  font-size: 80px;
   font-style: oblique;
   height: 100px;
   width: auto;
+  margin-bottom: 50px;
 
   font-weight: 800;
   text-shadow: 3px 3px 3px rgb(133, 136, 241);
@@ -41,20 +42,21 @@ body {
   font-size: 90px;
   text-align: center;
   font-weight: bolder;
-
+  margin-bottom: 20px;
   height: 200px;
   width: 600px;
   color: white;
   border-radius: 15px;
-  border: 8px ridge #ffffff2d;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 8px ridge #994ecb3f;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
 }
 #mystery-symbol {
   background-image: url(images/mysterNumber2.jpg);
   background-size: 150% auto;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
-  animation: flowStars 10s linear infinite;
+  animation: flowStars 15s linear infinite;
   /* animation: spinSymbol 3s infinite linear; */
 }
 @keyframes flowStars {
@@ -76,9 +78,10 @@ body {
   display: grid;
   justify-content: left;
   width: 281px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-  color: blueviolet;
+  color: rgb(165, 111, 215);
+  text-shadow: 1.5px 1.5px 1.5px rgb(133, 136, 241);
 
   /* margin-top: 50px; */
 }
@@ -100,7 +103,7 @@ body {
 
 #user-guess {
   width: 150px;
-  height: 40px;
+  height: 80px;
   text-align: center;
   border-radius: 8px;
   background-color: transparent;
