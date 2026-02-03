@@ -180,7 +180,7 @@ input::placeholder {
     height: auto;
     }
 #hidden-answer {
-        height: 100px;
+        height: 200px;
         width: 300px;
         font-size: 30px;
         margin-bottom: 10px;
