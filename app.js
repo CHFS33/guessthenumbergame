@@ -19,13 +19,11 @@ submitBtn.addEventListener("click", function (e) {
     return;
   }
   if (guess === secretNumber) {
-    messageDisplay.innerText = "🎉 Correct! You guessed right!";
+    messageDisplay.innerText = "🎉 Winner!";
   } else if (guess !== secretNumber) {
     if (currentScore > 1) {
       messageDisplay.innerText =
-        guess > secretNumber ?
-          "Secret Number is lower!"
-        : "Secret Number is higher!";
+        guess > secretNumber ? "📈Too High!" : "📉Too  Low!";
       currentScore = currentScore - 1;
       scoreDisplay.innerText = `Current Score ${currentScore}`;
     } else {

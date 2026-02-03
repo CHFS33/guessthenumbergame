@@ -10,14 +10,15 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-image: url("images/pageBackground.jpg");
+  background-image: url("images/mysteryNumber3.jpg");
+  background-size: cover;
   background-origin: border-box;
 }
 
 .game-name {
   display: flex;
   text-align: center;
-  color: rgba(148, 43, 226);
+  color: #9c692c;
   font-size: 80px;
   font-style: oblique;
   height: 100px;
@@ -25,7 +26,7 @@ body {
   margin-bottom: 50px;
 
   font-weight: 800;
-  text-shadow: 3px 3px 3px rgb(133, 136, 241);
+  text-shadow: 3px 3px 3px #28332a;
 }
 
 #secret-number {
@@ -81,8 +82,8 @@ body {
   width: 281px;
   font-size: 25px;
   font-weight: bold;
-  color: rgb(165, 111, 215);
-  text-shadow: 1.5px 1.5px 1.5px rgb(133, 136, 241);
+  color: #9c692c;
+  text-shadow: 1.5px 1.5px 1.5px #28332a;
 
   /* margin-top: 50px; */
 }
@@ -117,13 +118,20 @@ body {
   margin-left: 15px;
   border-radius: 8px;
   background-color: transparent;
-  color: rgb(165, 111, 215);
+  color: #9c692c;
   font-weight: bold;
   font-size: 20px;
   border: none;
 }
 input::placeholder {
-  color: rgb(165, 111, 215);
+  color: #9c692c;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bolder;
+}
+input {
+  color: #9c692c;
+  font-size: 30px;
 }
 
 #round-display {
@@ -166,31 +174,33 @@ input::placeholder {
   #mystery-symbol {
     font-size: 4rem;
   }
+  input {
+    font-size: 1.2rem;
+  }
   input::placeholder {
-    color: rgb(165, 111, 215);
+    color: #9c692c;
   }
   #message-text {
     font-size: 2rem;
   }
 }
 @media (max-height: 500px) {
-.game-name {
+  .game-name {
     font-size: 2rem;
     margin-bottom: 10px;
     height: auto;
-    }
-#mystery-symbol {
-        font-size: 50px;
-
-}
-#hidden-answer {
-        height: 150px;
-        width: 300px;
-        margin-bottom: 10px;
-    }
-.gameplay {
-        flex-direction: row-reverse;   
-        justify-content: center;
-        gap: 20px;
-    }
+  }
+  #mystery-symbol {
+    font-size: 50px;
+  }
+  #hidden-answer {
+    height: 150px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .gameplay {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20px;
+  }
 }
