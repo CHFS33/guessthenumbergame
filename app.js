@@ -29,7 +29,7 @@ submitBtn.addEventListener("click", function (e) {
       messageDisplay.innerText =
         guess > secretNumber ? "📈Too High!" : "📉Too  Low!";
       currentScore = currentScore - 1;
-      scoreDisplay.innerText = `Current Score ${currentScore}`;
+      scoreDisplay.innerText = `Current Score: ${currentScore}`;
     } else {
       messageDisplay.innerText = "You lost this round!";
       scoreDisplay.innerText = 0;
@@ -42,6 +42,6 @@ againBtn.addEventListener("click", function (e) {
   currentScore = 10;
   secretNumber = Math.floor(Math.random() * 20) + 1;
   messageDisplay.innerText = "Start Guessing...";
-  scoreDisplay.innerText = currentScore;
+  scoreDisplay.innerText = `Current Score: ${currentScore}`;
   userInput.value = "";
 });
