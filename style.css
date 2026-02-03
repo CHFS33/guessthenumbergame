@@ -179,6 +179,10 @@ input::placeholder {
     margin-bottom: 10px;
     height: auto;
     }
+#mystery-symbol {
+font-size: 30px;
+
+}
 #hidden-answer {
         height: 200px;
         width: 300px;
