@@ -71,7 +71,8 @@ body {
 .gameplay {
   display: flex;
   flex-direction: row-reverse;
-  width: 981px;
+  width: 95%;
+  max-width: 981px;
 }
 
 .stat-board {
@@ -171,4 +172,22 @@ input::placeholder {
   #message-text {
     font-size: 2rem;
   }
+}
+@media (max-height: 500px) {
+.game-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    height: auto;
+    }
+#hidden-answer {
+        height: 100px;
+        width: 300px;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+.gameplay {
+        flex-direction: row;   
+        justify-content: center;
+        gap: 20px;
+    }
 }
