@@ -9,6 +9,7 @@ const submitBtn = document.getElementById("user-answer");
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 let currentScore = 10;
 let highScore = 0;
+let currentRound = 1;
 console.log(`Secret Number: ${secretNumber}`);
 //Game Logic
 submitBtn.addEventListener("click", function (e) {
@@ -43,5 +44,6 @@ againBtn.addEventListener("click", function (e) {
   secretNumber = Math.floor(Math.random() * 20) + 1;
   messageDisplay.innerText = "Start Guessing...";
   scoreDisplay.innerText = `Current Score: ${currentScore}`;
+  roundDisplay.innerText = `Round: ${currentRound ++}`;
   userInput.value = "";
 });
