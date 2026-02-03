@@ -3,10 +3,10 @@
 const messageDisplay = document.getElementById("message-text");
 const scoreDisplay = document.getElementById("current-score");
 const roundDisplay = document.getElementById("round-display");
-const totalScoreDisplay = document.getElementById("total-score");
+const totalScoreDisplay = document.getElementById("total-round-score");
 const userInput = document.getElementById("user-guess");
 const submitBtn = document.getElementById("user-answer");
-let secretNumber = Math.floor(Math.random() * 50) + 1;
+let secretNumber = Math.floor(Math.random() * 20) + 1;
 let currentScore = 10;
 let highScore = 0;
 console.log(`Secret Number: ${secretNumber}`);
@@ -20,6 +20,10 @@ submitBtn.addEventListener("click", function (e) {
   }
   if (guess === secretNumber) {
     messageDisplay.innerText = "🎉 Winner!";
+    if (currentScore > highScore) {
+      highScore = currentScore;
+      totalScoreDisplay.innerText = `High Score ${currentScore}`;
+    }
   } else if (guess !== secretNumber) {
     if (currentScore > 1) {
       messageDisplay.innerText =
@@ -31,4 +35,13 @@ submitBtn.addEventListener("click", function (e) {
       scoreDisplay.innerText = 0;
     }
   }
+});
+const againBtn = document.querySelector(".again");
+againBtn.addEventListener("click", function () {
+  currentScore = 10;
+  secretNumber = Math.floor(Math.random() * 20) + 1;
+  messageDisplay.innerText = "Start Guessing...";
+  scoreDisplay.innerText = currentScore;
+  userInput.value = "";
+  document.body.style.backgroundImage = url("images/mysteryNumber3.jpg");
 });
