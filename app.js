@@ -43,5 +43,4 @@ againBtn.addEventListener("click", function () {
   messageDisplay.innerText = "Start Guessing...";
   scoreDisplay.innerText = currentScore;
   userInput.value = "";
-  document.body.style.backgroundImage = url("images/mysteryNumber3.jpg");
 });
