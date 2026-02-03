@@ -182,12 +182,9 @@ input::placeholder {
 #hidden-answer {
         height: 100px;
         width: 300px;
-        
+        font-size: 30px;
         margin-bottom: 10px;
     }
-#mystery-symbol {
-    font-size: 3rem;
-  }
 .gameplay {
         flex-direction: row-reverse;   
         justify-content: center;
