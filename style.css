@@ -182,11 +182,11 @@ input::placeholder {
 #hidden-answer {
         height: 100px;
         width: 300px;
-        font-size: 50px;
+        font-size: 3rem;
         margin-bottom: 10px;
     }
 .gameplay {
-        flex-direction: row;   
+        flex-direction: row-reverse;   
         justify-content: center;
         gap: 20px;
     }
