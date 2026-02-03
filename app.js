@@ -38,6 +38,7 @@ submitBtn.addEventListener("click", function (e) {
 });
 const againBtn = document.querySelector(".again");
 againBtn.addEventListener("click", function (e) {
+  e.preventDefault();
   currentScore = 10;
   secretNumber = Math.floor(Math.random() * 20) + 1;
   messageDisplay.innerText = "Start Guessing...";
