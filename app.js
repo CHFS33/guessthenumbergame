@@ -44,6 +44,7 @@ againBtn.addEventListener("click", function (e) {
   secretNumber = Math.floor(Math.random() * 20) + 1;
   messageDisplay.innerText = "Start Guessing...";
   scoreDisplay.innerText = `Current Score: ${currentScore}`;
-  roundDisplay.innerText = `Round: ${++currentRound}`;
+currentRound++;
+  roundDisplay.innerText = `Round: ${currentRound}`;
   userInput.value = "";
 });
