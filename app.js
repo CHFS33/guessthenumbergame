@@ -22,7 +22,7 @@ submitBtn.addEventListener("click", function (e) {
     messageDisplay.innerText = "🎉 Winner!";
     if (currentScore > highScore) {
       highScore = currentScore;
-      totalScoreDisplay.innerText = `High Score ${currentScore}`;
+      totalScoreDisplay.innerText = `High Score ${highScore}`;
     }
   } else if (guess !== secretNumber) {
     if (currentScore > 1) {
