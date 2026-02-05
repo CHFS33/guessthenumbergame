@@ -201,22 +201,51 @@ input {
 }
 @media (max-height: 500px) {
   .game-name {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Much smaller text */
+    margin-bottom: 5px; /* Less gap */
     height: auto;
   }
+  #hidden-answer {
+    height: 70px; /* Force it to be short (was 200px) */
+    width: 60%; /* Let it shrink sideways */
+    font-size: 2rem; /* Smaller text inside */
+    margin-bottom: 5px; /* Tiny gap */
+    border-width: 4px; /* Thinner border */
+  }
   #mystery-symbol {
-    font-size: 50px;
+    font-size: 3rem;
+  }
+  .stat-board {
+    margin-right: 10px; /* REMOVE the 200px gap! This is crucial. */
+    width: auto; /* Allow it to fit tight */
+    font-size: 1rem; /* Compact text */
+    text-align: left; /* Keep alignment tidy */
   }
   .user-section {
-    height: 150px;
-    width: 300px;
-    margin-bottom: 10px;
+    width: auto; /* Don't force 700px or 300px */
+    gap: 10px; /* Small space between input and button */
+  }
+  #user-guess {
+    height: 40px; /* Shorter input box */
+    width: 100px; /* Narrower input box */
+    font-size: 1rem;
+  }
+  #user-answer {
+    /* The Submit Button */
+    height: 40px;
+    font-size: 1rem;
+  }
+  .gameplay {
+    flex-direction: row; /* Standard row works best usually */
+    justify-content: center; /* Center everything */
+    align-items: center; /* Align vertically */
+    width: 100%;
+    gap: 15px; /* Space between Stats and Controls */
   }
 
-  .gameplay {
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 20px;
+  /* Shrink the message text so it doesn't push things down */
+  #message-text {
+    font-size: 1.2rem;
+    margin-right: 0;
   }
 }
