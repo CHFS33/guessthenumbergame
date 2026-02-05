@@ -9,6 +9,7 @@ const submitBtn = document.getElementById("user-answer");
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 let currentScore = 10;
 let highScore = 0;
+let currentRound = 1;
 console.log(`Secret Number: ${secretNumber}`);
 //Game Logic
 submitBtn.addEventListener("click", function (e) {
@@ -22,14 +23,14 @@ submitBtn.addEventListener("click", function (e) {
     messageDisplay.innerText = "🎉 Winner!";
     if (currentScore > highScore) {
       highScore = currentScore;
-      totalScoreDisplay.innerText = `High Score ${currentScore}`;
+      totalScoreDisplay.innerText = `High Score ${highScore}`;
     }
   } else if (guess !== secretNumber) {
     if (currentScore > 1) {
       messageDisplay.innerText =
         guess > secretNumber ? "📈Too High!" : "📉Too  Low!";
       currentScore = currentScore - 1;
-      scoreDisplay.innerText = `Current Score ${currentScore}`;
+      scoreDisplay.innerText = `Current Score: ${currentScore}`;
     } else {
       messageDisplay.innerText = "You lost this round!";
       scoreDisplay.innerText = 0;
@@ -37,11 +38,13 @@ submitBtn.addEventListener("click", function (e) {
   }
 });
 const againBtn = document.querySelector(".again");
-againBtn.addEventListener("click", function () {
+againBtn.addEventListener("click", function (e) {
+  e.preventDefault();
   currentScore = 10;
   secretNumber = Math.floor(Math.random() * 20) + 1;
   messageDisplay.innerText = "Start Guessing...";
-  scoreDisplay.innerText = currentScore;
+  scoreDisplay.innerText = `Current Score: ${currentScore}`;
+currentRound++;
+  roundDisplay.innerText = `Round: ${currentRound}`;
   userInput.value = "";
-  document.body.style.backgroundImage = url("images/mysteryNumber3.jpg");
 });
